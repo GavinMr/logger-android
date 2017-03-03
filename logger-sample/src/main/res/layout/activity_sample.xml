@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/logv_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VERBOSE LOG"/>
+        <Button
+            android:id="@+id/logd_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEBUG LOG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/logi_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFO LOG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/logw_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WARN LOG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/loge_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ERROR LOG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/loga_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ASSERT LOG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/logd_custom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEBUG LOG, CUSTOM TAG"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/log_json_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JSON LOG"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</ScrollView>
