@@ -2,7 +2,6 @@ package com.github.garymr.android.logger.sample;
 
 import android.app.Application;
 
-import com.github.garymr.android.logger.Interceptor;
 import com.github.garymr.android.logger.Level;
 import com.github.garymr.android.logger.Logger;
 

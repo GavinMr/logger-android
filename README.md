@@ -71,6 +71,10 @@ Logger.tag("LoggerSample-MYTAG").d("This is a DEBUG level of the log");
 
 ```
 Logger.json(Level.DEBUG, json);
+Logger.v(list);
+Logger.v(map);
+Logger.v(set);
+Logger.v(new String[]);
 ```
 
 ![Logger-json](docs/images/logger-json.png)

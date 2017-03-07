@@ -1,6 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
 
-version = "1.0.0"
+publish {
+    userOrg = 'garymr'
+    groupId = 'com.github.garymr.android'
+    artifactId = 'logger'
+    publishVersion = '1.0.0'
+    desc = 'pretty and powerful logger for android'
+    website = 'https://github.com/GaryMr/logger-android'
+}
 
 android {
     compileSdkVersion 25
@@ -28,3 +36,4 @@ android {
 dependencies {
 
 }
+

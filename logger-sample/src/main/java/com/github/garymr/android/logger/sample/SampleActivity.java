@@ -8,6 +8,8 @@ import android.view.View;
 import com.github.garymr.android.logger.Level;
 import com.github.garymr.android.logger.Logger;
 
+import java.util.HashMap;
+
 public class SampleActivity extends AppCompatActivity {
 
     @Override
@@ -78,6 +80,16 @@ public class SampleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Logger.json(Level.DEBUG, "{\"total\":1,\"reult\":[{\"code\":\"JD\",\"name\":\"北京首都航空有限公司\"}],\"error_code\":0,\"reason\":\"Succes\"}");
+            }
+        });
+
+        findViewById(R.id.log_map_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HashMap<String, Object> map = new HashMap<>();
+                map.put("error_message", "success");
+                map.put("error_code", 100);
+                Logger.v(map);
             }
         });
     }

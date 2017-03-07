@@ -24,10 +24,31 @@ public enum Level {
      */
     ALL(Integer.MAX_VALUE);
 
-    private final int intLevel;
+    private final int value;
 
-    private Level(final int val) {
-        intLevel = val;
+    Level(final int val) {
+        this.value = val;
+    }
+
+    public static Level valueOf(int value) {
+        switch (value) {
+            case 0:
+                return OFF;
+            case 100:
+                return ASSERT;
+            case 200:
+                return ERROR;
+            case 300:
+                return WARN;
+            case 400:
+                return INFO;
+            case 500:
+                return DEBUG;
+            case 600:
+                return VERBOSE;
+            default:
+                return ALL;
+        }
     }
 
     /**
@@ -35,7 +56,7 @@ public enum Level {
      *
      * @return the integer value of the Level.
      */
-    public int intLevel() {
-        return intLevel;
+    public int getValue() {
+        return value;
     }
 }

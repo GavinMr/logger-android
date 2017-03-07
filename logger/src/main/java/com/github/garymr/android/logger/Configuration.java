@@ -6,7 +6,7 @@ public class Configuration {
 
     private String tag = DEFAULT_TAG;
     private Level level = Level.ALL;
-    private LoggerPrinter loggerPrinter = new LoggerPrinter();
+    private LoggerPrinter loggerPrinter = null;
     private Interceptor interceptor;
 
     private Configuration() {
@@ -36,6 +36,9 @@ public class Configuration {
         }
 
         public Configuration create() {
+            if (config.loggerPrinter == null) {
+                config.loggerPrinter = new DefaultLoggerPrinter();
+            }
             return config;
         }
 
