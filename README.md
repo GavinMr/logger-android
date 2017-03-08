@@ -5,11 +5,9 @@ Logger 是一个功能强大，易扩展的Android日志程序。
 ## 日志输出显示
 ![Logger-log](docs/images/logger-log.png)
 
-## 开始使用Logger
+## 下载
 
-### Android Studio 或者 Gradle
-
-项目目录build.gradle
+### Gradle
 
 ```
 dependencies {
@@ -27,6 +25,7 @@ dependencies {
 </dependency>
 ```
 
+## 开始使用Logger
 
 ```
 Logger.v("This is a VERBOSE level of the log");
