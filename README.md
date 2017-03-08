@@ -7,6 +7,27 @@ Logger 是一个功能强大，易扩展的Android日志程序。
 
 ## 开始使用Logger
 
+### Android Studio 或者 Gradle
+
+项目目录build.gradle
+
+```
+dependencies {
+	compile 'com.github.garymr.android:logger:1.0.0'
+}
+```
+
+### Maven
+
+```
+<dependency>
+  <groupId>com.github.garymr.android</groupId>
+  <artifactId>logger</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+
 ```
 Logger.v("This is a VERBOSE level of the log");
 Logger.d("This is a DEBUG level of the log");
